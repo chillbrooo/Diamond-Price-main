@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicted Result</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #050505;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        section {
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+
+        p {
+            margin-top: 0;
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Predicted Result</h1>
+    </header>
+
+    <section>
+        <p>The predicted result will be displayed here:</p>
+        
+        <p>Predicted Value: ${{ '{:,.2f}'.format(predicted_value) }}</p>
+        <button id="home button" onclick="window.location.href='/';">Go Back To Home</button>
+    </section>
+</body>
+
+</html>
